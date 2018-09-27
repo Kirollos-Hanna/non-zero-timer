@@ -1,0 +1,26 @@
+*{
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+body{
+  background-color: #ECA72C;
+  color: #44355B;
+  text-align: center;
+}
+
+input{
+  border-width: 2px;
+  border-color: #ED3821;
+  border-radius: 6px;
+  background-color: #EE5622;
+  color: #221E22;
+  padding: 2px;
+  transition:0.2s ease all;
+}
+
+input:focus{
+  outline: none;
+  background-color: #FFF;
+  border-radius: 0px;
+}
