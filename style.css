@@ -4,23 +4,49 @@
 }
 
 body{
-  background-color: #ECA72C;
-  color: #44355B;
+  /* background-color: #E0E0E2; */
+  color: #721817;
   text-align: center;
 }
 
 input{
   border-width: 2px;
-  border-color: #ED3821;
+  border-color: #436599;
   border-radius: 6px;
-  background-color: #EE5622;
-  color: #221E22;
+  background-color: #436599;
+  color: #000;
   padding: 2px;
   transition:0.2s ease all;
+  text-align: center;
 }
 
 input:focus{
   outline: none;
   background-color: #FFF;
   border-radius: 0px;
+}
+
+button {
+  margin: 2px;
+  background-color: #721817;
+  color: #E0E0E2;
+  border: none;
+  border-radius: 2px;
+}
+
+a{
+  color: #721817;
+}
+
+.side-btn{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.side-btn button{
+  width: 50px;
+  height: 10px;
+  font-size: 8px;
+  background-color: #436599;
 }
