@@ -3,24 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>Non Zero Timer</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <!-- Add FAQ and Settings and History(where you can see your activities through out the day)-->
-    <nav></nav>
+  <body class="help-page">
+    <!-- TO-DO: Add History(where you can see your activities through out the day)-->
+    <!-- Nav bar not useful for now -->
+    <!-- <nav>
+      <ul>
+        <li>Settings</li>
+        <li>FAQ</li>
+      </ul>
+    </nav> -->
     <h2>Settings</h2>
     <label>
       Time Limit:
       <input class="time-limit" type="number">
+      <!-- <select>
+        <option value="seconds">Seconds</option>
+        <option value="minutes">Minutes</option>
+      </select> -->
     </label>
     <button class="time-limit-set-btn">Set</button>
+    <p class="time-limit-note">Setting Saved</p>
+    <hr>
     <h2>FAQ</h2>
-    <p><b>I clicked on "prevent this page from creating additional dialogs", how do I enable the alerts again?</b></p>
+    <p><em>How do I use this extension?</em></p>
     <ol>
-      <li>Right-click on the Non Zero Timer extension</li>
-      <li>Click on manage extensions</li>
-      <li>Disable and then enable the extension</li>
+      <li>Set a time limit (default is 1800 seconds or 30 minutes).</li>
+      <li>Write down what you want to do when the time limit is reached.</li>
+      <li>Once the alert shows up, try to do something as big or as little as you like. Just make sure to have a non zero moment within this time.</li>
     </ol>
-    <p>(Note: that some data may be lost)</p>
+    <p></p>
+    <p><em>I clicked on "prevent this page from creating additional dialogs", how do I enable the alerts again?</em></p>
+    <ol>
+      <li>Right-click on the Non Zero Timer extension.</li>
+      <li>Click on manage extensions.</li>
+      <li>Disable and then enable the extension.</li>
+    </ol>
+    <p>(Note: some data may be lost)</p>
+    <hr>
+    <h2>About this project</h2>
+    <p>This project is <a href="https://github.com/Kirollos-Hanna/non-zero-timer">open source</a></p>
+    <p>You can DM me on twitter <a href="https://twitter.com/kirojb">@kirojb</a></p>
+    <p class="author">Made by Kirollos Hanna</p>
     <script src="help.js" charset="utf-8"></script>
   </body>
 </html>

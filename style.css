@@ -3,10 +3,19 @@
   font-weight: bold;
 }
 
-body{
-  /* background-color: #E0E0E2; */
+.main-pop-up {
   color: #721817;
   text-align: center;
+}
+
+.help-page {
+  font-size: 15px;
+}
+
+nav ul li {
+  display: inline;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 input{
@@ -49,4 +58,8 @@ a{
   height: 10px;
   font-size: 8px;
   background-color: #436599;
+}
+
+.author{
+  font-size: 9px;
 }

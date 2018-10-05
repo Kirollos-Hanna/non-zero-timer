@@ -11,6 +11,8 @@
   "icons": {
     "16": "assets/16_icon.png",
     "48": "assets/48_icon.png",
-    "128": "assets/128_icon.png" },
-  "manifest_version": 2
+    "128": "assets/128_icon.png"
+  },
+  "manifest_version": 2,
+  "author": "Kirollos Hanna"
 }
