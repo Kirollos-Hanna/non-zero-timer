@@ -18,7 +18,6 @@ let Ding = () => {
   audio.play();
 };
 
-
 let timer = setInterval(() => {
   time += 1;
   if(time >= TIME_LIMIT){

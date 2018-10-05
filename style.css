@@ -63,3 +63,7 @@ a{
 .author{
   font-size: 9px;
 }
+
+.time-limit{
+  width: 60px;
+}
