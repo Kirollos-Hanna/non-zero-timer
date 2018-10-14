@@ -1,5 +1,6 @@
 {
   "name": "Non Zero Timer",
+  "short_name": "Non Zero Timer",
   "version": "0.1.0",
   "description": "A productivity extension for people who need more structure in their lives",
   "background": {
