@@ -48,6 +48,13 @@ button {
   box-shadow: 8px 5px 10px 0px rgba(199,199,199,1);
 }
 
+button:hover{
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 10px #fff;
+  background-color: #51100f;
+}
+
 a{
   color: #721817;
 }
@@ -63,6 +70,10 @@ a{
   height: 10px;
   font-size: 8px;
   background-color: #436599;
+}
+
+.side-btn button:hover{
+  background-color: #36527c;
 }
 
 .author{
