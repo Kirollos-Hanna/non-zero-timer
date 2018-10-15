@@ -24,7 +24,7 @@ timeLimitBtn.addEventListener("click", () => {
       displayNote(minTimeLimitNote);
     } else if(timeInSeconds > 10800){
       displayNote(maxTimeLimitNote);
-    } else {
+    } else if(timeInSeconds){
       port.postMessage({limit: timeInSeconds});
       displayNote(timeLimitNote);
     }
