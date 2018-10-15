@@ -1,21 +1,32 @@
-let timeLimit = document.querySelector(".time-limit");
-let timeLimitBtn = document.querySelector(".time-limit-set-btn");
-let timeLimitNote = document.querySelector(".time-limit-note");
-let timeOption = document.querySelector(".time-options");
-let port = chrome.extension.connect({
+let timeLimit = document.querySelector(".time-limit"),
+timeLimitBtn = document.querySelector(".time-limit-set-btn"),
+timeLimitNote = document.querySelector(".time-limit-note"),
+maxTimeLimitNote = document.querySelector(".max-time-limit-note"),
+minTimeLimitNote = document.querySelector(".min-time-limit-note"),
+timeOption = document.querySelector(".time-options"),
+port = chrome.extension.connect({
     name: "Timer Communication"
 });
 
-timeLimitNote.style.display = "none";
+let notesArray = [timeLimitNote, maxTimeLimitNote, minTimeLimitNote];
+for(let i = 0; i < notesArray.length; i++){
+  notesArray[i].style.display = "none";
+}
+
+function displayNote(noteToShow){
+  notesArray.map(note => note === noteToShow? note.style.display = "inline" : note.style.display = "none");
+}
 
 timeLimitBtn.addEventListener("click", () => {
-    console.log(timeOption.value);
-    if(timeOption.value === "minutes"){
-      port.postMessage({limit: parseInt(timeLimit.value) * 60});
+    let timeInSeconds = timeOption.value === "minutes"? parseInt(timeLimit.value) * 60 : parseInt(timeLimit.value);
+
+    if(timeInSeconds < 300){
+      displayNote(minTimeLimitNote);
+    } else if(timeInSeconds > 10800){
+      displayNote(maxTimeLimitNote);
     } else {
-      port.postMessage({limit: timeLimit.value});
+      port.postMessage({limit: timeInSeconds});
+      displayNote(timeLimitNote);
     }
-    if(timeLimit.value){
-      timeLimitNote.style.display = "inline";
-    }
+
 });

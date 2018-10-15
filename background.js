@@ -10,6 +10,12 @@ chrome.extension.onConnect.addListener(function(port) {
           task = msg.task;
         } else if(msg.limit){
           TIME_LIMIT = msg.limit;
+          // if the time limit exceeds 3 hours in length or is lower than 5 minutes bring them to the appropriate level
+          if(TIME_LIMIT < 300){
+            TIME_LIMIT = 300;
+          } else if(TIME_LIMIT > 10800){
+            TIME_LIMIT = 10800;
+          }
         }
       });
 });
