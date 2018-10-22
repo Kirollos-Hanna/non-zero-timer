@@ -26,9 +26,9 @@ input{
   padding: 2px;
   transition:0.2s ease all;
   text-align: center;
-  -webkit-box-shadow: 8px 5px 10px 0px rgba(199,199,199,1);
-  -moz-box-shadow: 8px 5px 10px 0px rgba(199,199,199,1);
-  box-shadow: 8px 5px 10px 0px rgba(199,199,199,1);
+  -webkit-box-shadow: 2px 3px 10px 0px rgba(199,199,199,1);
+  -moz-box-shadow: 2px 3px 10px 0px rgba(199,199,199,1);
+  box-shadow: 2px 3px 10px 0px rgba(199,199,199,1);
 }
 
 input:focus{
@@ -43,9 +43,9 @@ button {
   color: #E0E0E2;
   border: none;
   border-radius: 2px;
-  -webkit-box-shadow: 8px 5px 10px 0px rgba(199,199,199,1);
-  -moz-box-shadow: 8px 5px 10px 0px rgba(199,199,199,1);
-  box-shadow: 8px 5px 10px 0px rgba(199,199,199,1);
+  -webkit-box-shadow: 2px 3px 10px 0px rgba(199,199,199,1);
+  -moz-box-shadow: 2px 3px 10px 0px rgba(199,199,199,1);
+  box-shadow: 2px 3px 10px 0px rgba(199,199,199,1);
 }
 
 button:hover{
@@ -74,6 +74,15 @@ a{
 
 .side-btn button:hover{
   background-color: #36527c;
+}
+
+.pause-btn{
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 15px;
+  font-size: 9px;
+  padding: 0;
 }
 
 .author{
